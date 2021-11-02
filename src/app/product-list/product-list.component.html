@@ -1,0 +1,10 @@
+<!-- Highlight Card -->
+<div class="card  card-small">
+
+    <h2>{{ PRODUCTTITLE }}</h2>
+
+  </div>
+
+  <div  class="card card-medium" *ngFor="let product of products">
+    <app-product [product]=product (data)="eventHandler($event)"></app-product>
+  </div>

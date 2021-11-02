@@ -1,0 +1,9 @@
+.card.card-medium {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 500px;
+  }
+
+  .total {
+    float: right
+}

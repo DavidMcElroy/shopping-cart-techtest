@@ -1,0 +1,17 @@
+<div class="card  card-small">
+
+    <h2>{{ cartTitle }}</h2>
+
+  </div>
+
+  <div  class="card  card-medium" *ngFor="let product of products">
+    <app-product [product]=product [button]="remove" (data)="eventHandler($event)"></app-product>
+  </div>
+
+  <div class = "total">
+      <h2>Total: {{total | currency}}</h2>
+      <button  routerLink="/product"
+  routerLinkActive="active" > Return</button>
+  </div>
+
+  
